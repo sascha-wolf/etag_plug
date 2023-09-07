@@ -39,6 +39,9 @@ defmodule ETagPlug.MixProject do
     [
       {:plug, "~> 1.0"},
 
+      # Telemetry
+      {:telemetry, "~> 1.0", optional: true},
+
       # Development
       {:ex_doc, "~> 0.30", only: :dev, runtime: false},
       {:credo, ">= 1.0.0", only: :dev, runtime: false},
